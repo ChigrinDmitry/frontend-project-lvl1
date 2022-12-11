@@ -1,0 +1,26 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Hexlet project",
+  "main": "brain-games.js",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChigrinDmitry/brain-games.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChigrinDmitry/brain-games/issues"
+  },
+  "homepage": "https://github.com/ChigrinDmitry/brain-games#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
