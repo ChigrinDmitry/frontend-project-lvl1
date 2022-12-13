@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import checkEven from "../src/checkEven.js";
+import checkEven from '../src/checkEven.js';
 
 checkEven();
