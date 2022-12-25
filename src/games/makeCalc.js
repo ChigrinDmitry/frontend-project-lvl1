@@ -56,7 +56,7 @@ const gameLogic = () => {
   };
 
   makeCalc();
-  
+
 }
 
 const brainCalc = () => {

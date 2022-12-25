@@ -9,7 +9,7 @@ import {
   incorrect, 
   congratulations, 
   repeatForThreeTimes,
-  userName
+  getUserName
 } from '../index.js';
 
 
@@ -26,6 +26,9 @@ const isEven = (num) => {
 
 
 const gameLogic = () => {
+  
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  
   let currentAnswersCount = 0;
   const allAnswersCount = 3;
 
