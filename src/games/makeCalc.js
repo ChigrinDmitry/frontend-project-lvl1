@@ -1,37 +1,29 @@
-import readlineSync from 'readline-sync';
 import {
   welcome,
-  greeting, 
-  askName, 
-  askQuestion, 
-  getRandomNumber, 
-  correct, 
-  incorrect, 
-  congratulations, 
-  repeatForThreeTimes,
-  userName
+  greeting,
+  askName,
+  askQuestion,
+  getRandomNumber,
+  correct,
+  incorrect,
+  congratulations,
 } from '../index.js';
 
-
 const gameLogic = () => {
-
   const getRandomOperation = () => {
-    let mathOperations = ['*', '+', '-'];
-    let randomNumber = Math.floor(Math.random() * mathOperations.length);
-    let randomMathOperation = mathOperations[randomNumber];
+    const mathOperations = ['*', '+', '-'];
+    const randomNumber = Math.floor(Math.random() * mathOperations.length);
+    const randomMathOperation = mathOperations[randomNumber];
     return randomMathOperation;
   };
-
   const resultOfMathOperation = (a, b, c) => {
     if (c === '*') {
       return a * b;
-    } else if (c === '+') {
-      return a + b;
-    } else {
-      return a - b;
     }
+    if (c === '+') {
+      return a + b;
+    } return a - b;
   };
-
   const makeCalc = () => {
     let currentAnswersCount = 0;
     const allAnswersCount = 3;
@@ -46,7 +38,7 @@ const gameLogic = () => {
       const correctAnswer = resultOfMathOperation(randomNumberOne, randomNumberTwo, mathOperation);
       const answer = askQuestion('Your answer: ');
       if (answer == correctAnswer) {
-        correct();;
+        correct();
       } else {
         return incorrect(answer, correctAnswer);
       }
@@ -54,16 +46,14 @@ const gameLogic = () => {
     }
     return congratulations();
   };
-
   makeCalc();
-
-}
+};
 
 const brainCalc = () => {
   welcome();
   askName();
   greeting();
   gameLogic();
-}
+};
 
 export default brainCalc;

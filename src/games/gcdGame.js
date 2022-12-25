@@ -1,30 +1,26 @@
 import {
   welcome,
-  greeting, 
-  askName, 
-  askQuestion, 
-  getRandomNumber, 
-  correct, 
-  incorrect, 
-  congratulations, 
-  repeatForThreeTimes,
-  getUserName
+  greeting,
+  askName,
+  askQuestion,
+  getRandomNumber,
+  correct,
+  incorrect,
+  congratulations,
 } from '../index.js';
 
 const getMinimalNumber = (numOne, numTwo) => {
   if (numOne < numTwo) {
-    return numOne
-  } else if (numTwo < numOne) {
-    return numTwo
-  } else return numOne
-}
+    return numOne;
+  } 
+  if (numTwo < numOne) {
+    return numTwo;
+  } return numOne;
+};
 
 const gameLogicGCD = () => {
-
   const findGCD = () => {
-
     console.log('Find the greatest common divisor of given numbers.');
-
     let currentAnswersCount = 0;
     const allAnswersCount = 3;
 
@@ -43,31 +39,28 @@ const gameLogicGCD = () => {
           }
         }
         return greatestCommonDivisor;
-      }
-      
+      };
 
       const answerOfUser = askQuestion('Your answer: ');
       const correctAnswer = greatestCommonDivisorIs();
       if (answerOfUser == correctAnswer) {
         correct();
-        } else {
+      } else {
         return incorrect(`${correctAnswer}`, `${answerOfUser}`);
       }
 
       currentAnswersCount += 1;
     }
     return congratulations();
-  }
-  
+  };
   findGCD();
-
-}
+};
 
 const getGCD = () => {
   welcome();
   askName();
   greeting();
   gameLogicGCD();
-}
+};
 
 export default getGCD;
