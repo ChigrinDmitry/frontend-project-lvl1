@@ -8,3 +8,6 @@ https://asciinema.org/a/3kzdL4UEcrF7kT1vMSNCEAnPi
 
 asciinema link ("Calculator" game):
  https://asciinema.org/a/7mfoMNh19nWKTKzFYhUPlEkvP
+
+asciinema link ("Greatest common divisor" game):
+https://asciinema.org/a/7THt3X9GEcmnxhhBrlAMFOlzV
