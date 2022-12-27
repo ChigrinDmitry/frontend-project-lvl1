@@ -11,3 +11,6 @@ asciinema link ("Calculator" game):
 
 asciinema link ("Greatest common divisor" game):
 https://asciinema.org/a/7THt3X9GEcmnxhhBrlAMFOlzV
+
+asciinema link ("Arithmetic Progression" game):
+https://asciinema.org/a/cE70MoDtyQwmPzsvABkY5aHB8
