@@ -31,7 +31,7 @@ const gameLogicGCD = () => {
 
       const minimalNumber = getMinimalNumber(randomNumberOne, randomNumberTwo);
 
-      const greatestCommonDivisorIs = () => {
+      const getGreatestCommonDivisor = () => {
         let greatestCommonDivisor = 0;
         for (let i = 0; i <= minimalNumber; i += 1) {
           if ((randomNumberOne % i === 0) && (randomNumberTwo % i === 0)) {
@@ -42,7 +42,7 @@ const gameLogicGCD = () => {
       };
 
       const answerOfUser = askQuestion('Your answer: ');
-      const correctAnswer = greatestCommonDivisorIs();
+      const correctAnswer = getGreatestCommonDivisor();
       if (answerOfUser == correctAnswer) {
         correct();
       } else {

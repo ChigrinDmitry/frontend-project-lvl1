@@ -19,7 +19,7 @@ export const greeting = () => {
 
 export const askQuestion = (text) => readlineSync.question(text);
 
-export const getRandomNumber = () => Math.round(Math.random() * 100);
+export const getRandomNumber = () => Math.round(Math.random() * 10);
 
 export const correct = () => console.log('Correct!');
 
