@@ -6,7 +6,7 @@
 
 A small console application consisting of several games. This application is a part of Hexlet educational course.
 
-Here is demonstration of application:
+Here is demonstration of the application:
 
 asciinema link ("Check Even" game):
 https://asciinema.org/a/3kzdL4UEcrF7kT1vMSNCEAnPi
