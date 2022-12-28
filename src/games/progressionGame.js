@@ -9,12 +9,8 @@ import {
   congratulations,
 } from '../index.js';
 
-
-
 const gameLogic = () => {
-
   console.log('What number is missing in the progression?');
-  
   const getProgressionLine = () => {
     const elementsOfProgression = [];
     const startNumber = getRandomNumber();
@@ -27,17 +23,17 @@ const gameLogic = () => {
       const nextElem = currentElem + stepOfProgression;
       elementsOfProgression.push(nextElem);
     }
-  
+
     const numberOfHiddenElement = Math.floor(Math.random() * elementsOfProgression.length);
     elementsOfProgression[numberOfHiddenElement] = '..';
 
     const progressionLine = elementsOfProgression.join(' ');
-    const hiddenElement = startNumber + (numberOfHiddenElement * stepOfProgression); 
+    const hiddenElement = startNumber + (numberOfHiddenElement * stepOfProgression);
     const result = [];
-    result.push(progressionLine, hiddenElement)
+    result.push(progressionLine, hiddenElement);
 
     return result;
-  }
+  };
 
   let currentAnswersCount = 0;
   const allAnswersCount = 3;
@@ -45,22 +41,20 @@ const gameLogic = () => {
   while (currentAnswersCount < allAnswersCount) {
     const values = getProgressionLine();
     console.log(`Question: ${values[0]}`);
-    
+
     const answerOfUser = askQuestion('Your answer: ');
     const correctAnswer = values[1];
-    if (answerOfUser == correctAnswer) {
+    if (answerOfUser === String(correctAnswer)) {
       correct();
     } else {
       return incorrect(`${correctAnswer}`, `${answerOfUser}`);
     }
 
     currentAnswersCount += 1;
-
   }
 
   return congratulations();
-
-}
+};
 
 const progressionGame = () => {
   welcome();

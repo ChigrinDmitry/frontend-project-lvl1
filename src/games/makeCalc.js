@@ -37,7 +37,7 @@ const gameLogic = () => {
 
       const correctAnswer = resultOfMathOperation(randomNumberOne, randomNumberTwo, mathOperation);
       const answer = askQuestion('Your answer: ');
-      if (answer == correctAnswer) {
+      if (answer === String(correctAnswer)) {
         correct();
       } else {
         return incorrect(answer, correctAnswer);

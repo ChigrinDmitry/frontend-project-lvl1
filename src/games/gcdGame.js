@@ -12,7 +12,7 @@ import {
 const getMinimalNumber = (numOne, numTwo) => {
   if (numOne < numTwo) {
     return numOne;
-  } 
+  }
   if (numTwo < numOne) {
     return numTwo;
   } return numOne;
@@ -43,7 +43,7 @@ const gameLogicGCD = () => {
 
       const answerOfUser = askQuestion('Your answer: ');
       const correctAnswer = getGreatestCommonDivisor();
-      if (answerOfUser == correctAnswer) {
+      if (answerOfUser === String(correctAnswer)) {
         correct();
       } else {
         return incorrect(`${correctAnswer}`, `${answerOfUser}`);

@@ -10,7 +10,6 @@ import {
 } from '../index.js';
 
 const gameLogic = () => {
-  
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   const isPrime = (num) => {
@@ -18,22 +17,22 @@ const gameLogic = () => {
     for (let i = 1; i < num; i += 1) {
       if (num % i === 0) {
         divisors.push(i);
-      };
+      }
     }
     if ((divisors.length > 1) || (num <= 1)) {
-      return 'no'
-    } return 'yes'
-  }
-  
+      return 'no';
+    } return 'yes';
+  };
+
   let currentAnswersCount = 0;
   const allAnswersCount = 3;
 
   while (currentAnswersCount < allAnswersCount) {
     const randomNumber = getRandomNumber();
-    console.log(`Question: ${randomNumber}`); 
+    console.log(`Question: ${randomNumber}`);
     const answerOfUser = askQuestion('Your answer: ');
     const correctAnswer = isPrime(randomNumber);
-    if (answerOfUser == correctAnswer) {
+    if (answerOfUser === String(correctAnswer)) {
       correct();
     } else {
       return incorrect(`${correctAnswer}`, `${answerOfUser}`);
@@ -41,7 +40,7 @@ const gameLogic = () => {
     currentAnswersCount += 1;
   }
   return congratulations();
-}
+};
 
 const primeGame = () => {
   welcome();
