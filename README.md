@@ -14,3 +14,6 @@ https://asciinema.org/a/7THt3X9GEcmnxhhBrlAMFOlzV
 
 asciinema link ("Arithmetic Progression" game):
 https://asciinema.org/a/cE70MoDtyQwmPzsvABkY5aHB8
+
+asciinema link ("Is Prime" game):
+https://asciinema.org/a/uufWkZoMcHZiB0cJ7h7pTtAzU
