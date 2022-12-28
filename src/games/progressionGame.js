@@ -29,7 +29,7 @@ const gameLogic = () => {
     }
   
     const numberOfHiddenElement = Math.floor(Math.random() * elementsOfProgression.length);
-    elementsOfProgression[numberOfHiddenElement] = '...';
+    elementsOfProgression[numberOfHiddenElement] = '..';
 
     const progressionLine = elementsOfProgression.join(' ');
     const hiddenElement = startNumber + (numberOfHiddenElement * stepOfProgression); 
